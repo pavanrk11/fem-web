@@ -1,0 +1,61 @@
+# Python
+*.pyo
+*.pyd
+__pycache__/
+*.env
+.venv/
+env/
+venv/
+instance/
+.pytest_cache/
+
+# Flask specific
+*.sqlite3
+*.db
+*.pdb
+instance/
+instance/*
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Logs and debug
+*.log
+*.out
+*.err
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React build
+build/
+dist/
+
+# Static files
+static/output/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Coverage and test results
+coverage/
+*.cover
+*.coverage
+nosetests.xml
+coverage.xml
+test-results/
+
+# Other temporary files
+tmp/
+temp/
