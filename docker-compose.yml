@@ -1,0 +1,23 @@
+version: '3'
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile-server
+    ports:
+      - "5000:5000"  # Expose the Python server on port 5000
+    volumes:
+      - ./server:/app
+    environment:
+      - FLASK_ENV=development  # Modify according to your Python environment
+
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile-client
+    ports:
+      - "3000:3000"  # Expose the React app on port 3000
+    volumes:
+      - ./client:/app
+    depends_on:
+      - server
